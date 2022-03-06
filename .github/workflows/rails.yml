@@ -37,7 +37,7 @@ jobs:
       - name: Bundle install
         run: bundle install --path=vendor/bundle --jobs 4 --retry 3
       - name: DB setup
-        run: bundle exec rails db:setup
+        run: bundle exec rake db:setup
       - name: Run rubocop
         run: bundle exec rubocop
       - name: Run rspec
