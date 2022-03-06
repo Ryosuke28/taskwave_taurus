@@ -19,7 +19,7 @@ jobs:
       image: ruby:2.7.5
       env:
         RAILS_ENV: test
-        DATABASE_HOST: postgres
+        DATABASE_HOST: db
 
     steps:
       - uses: actions/checkout@v2
